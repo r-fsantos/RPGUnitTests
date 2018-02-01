@@ -22,7 +22,7 @@ class Weapon {
 
 enum WeaponType:Int{
     case Sword = 50
-    case Axe = 70
+    case Axe = 60
     case Bow = 30
     case Staff = 40
 }

@@ -16,8 +16,6 @@ class UnitTestingSwiftTests: XCTestCase {
     var bow: Bow!
     var staff: Staff!
     
-    var hero: Warrior!
-    var enemy: Warrior!
     
     override func setUp() {
         super.setUp()
@@ -41,8 +39,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testAxeVersusSword(){
-        hero = Warrior(with: axe)
-        enemy = Warrior(with: sword)
+        let hero = Warrior(with: axe)
+        let enemy = Warrior(with: sword)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -51,8 +49,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testAxeVersusBow(){
-        hero = Warrior(with: axe)
-        enemy = Warrior(with: bow)
+        let hero = Warrior(with: axe)
+        let enemy = Warrior(with: bow)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -60,8 +58,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testAxeVersusStaff(){
-        hero = Warrior(with: axe)
-        enemy = Warrior(with: staff)
+        let hero = Warrior(with: axe)
+        let enemy = Warrior(with: staff)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -70,15 +68,15 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testAxeVersusAxe(){
-        hero = Warrior(with: axe)
-        enemy = Warrior(with: axe)
+        let hero = Warrior(with: axe)
+        let enemy = Warrior(with: axe)
         
         XCTAssertTrue(hero.life == enemy.life)
     }
     
     func testSwordVersusBow(){
-        hero = Warrior(with: sword)
-        enemy = Warrior(with: bow)
+        let hero = Warrior(with: sword)
+        let enemy = Warrior(with: bow)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -87,8 +85,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testSwordVersusStaff(){
-        hero = Warrior(with: sword)
-        enemy = Warrior(with: staff)
+        let hero = Warrior(with: sword)
+        let enemy = Warrior(with: staff)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -97,8 +95,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testSwordVersusSword(){
-        hero = Warrior(with: sword)
-        enemy = Warrior(with: sword)
+        let hero = Warrior(with: sword)
+        let enemy = Warrior(with: sword)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -107,8 +105,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testBowVersusStaff(){
-        hero = Warrior(with: bow)
-        enemy = Warrior(with: staff)
+        let hero = Warrior(with: bow)
+        let enemy = Warrior(with: staff)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -117,8 +115,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testBowVersusBow(){
-        hero = Warrior(with: bow)
-        enemy = Warrior(with: bow)
+        let hero = Warrior(with: bow)
+        let enemy = Warrior(with: bow)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -127,8 +125,38 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testStaffVersusStaff(){
-        hero = Warrior(with: staff)
-        enemy = Warrior(with: staff)
+        let hero = Warrior(with: staff)
+        let enemy = Warrior(with: staff)
+        
+        hero.attack(at: enemy)
+        enemy.attack(at: hero)
+        
+        XCTAssertTrue(hero.life == enemy.life)
+    }
+    
+    func testHunterVersusBadMage(){
+        let hero = Hunter(with: bow)
+        let enemy = Warrior(with: staff)
+        
+        hero.attack(at: enemy)
+        enemy.attack(at: hero)
+        
+        XCTAssertTrue(hero.life > enemy.life)
+    }
+    
+    func testHunterVersusMage(){
+        let hero = Hunter(with: bow)
+        let enemy = Mage(with: staff)
+        
+        hero.attack(at: enemy)
+        enemy.attack(at: hero)
+        
+        XCTAssertTrue(hero.life < enemy.life)
+    }
+    
+    func testHunterVersusBadHunter(){
+        let hero = Hunter(with: bow)
+        let enemy = Hunter(with: sword)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)

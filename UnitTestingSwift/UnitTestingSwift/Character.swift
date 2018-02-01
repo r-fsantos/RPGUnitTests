@@ -12,7 +12,7 @@ class Character {
     
     public let name: String
     
-    private var life: Int
+    public var life: Int
     
     public var weapon: Weapon
     
@@ -27,10 +27,10 @@ class Character {
     }
     
     func attack(at target: Character) {
-        target.hit(points: self.attack())
+        target.hit(points: self.damage())
     }
     
-    func attack() -> Int {
+    func damage() -> Int {
         return self.weapon.damage
     }
     

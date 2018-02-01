@@ -30,6 +30,10 @@ class UnitTestingSwiftTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        axe = nil
+        sword = nil
+        bow = nil
+        staff = nil
     }
     
     func testAxeBiggerDamage(){
@@ -45,7 +49,7 @@ class UnitTestingSwiftTests: XCTestCase {
         hero.attack(at: enemy)
         enemy.attack(at: hero)
         
-        XCTAssertTrue(hero.life > enemy.life)
+        XCTAssertTrue(hero.damage() > enemy.damage())
     }
     
     func testAxeVersusBow(){
@@ -54,7 +58,7 @@ class UnitTestingSwiftTests: XCTestCase {
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
-        XCTAssertTrue(hero.life > enemy.life)
+        XCTAssertTrue(hero.damage() > enemy.damage())
     }
     
     func testAxeVersusStaff(){
@@ -64,14 +68,17 @@ class UnitTestingSwiftTests: XCTestCase {
         hero.attack(at: enemy)
         enemy.attack(at: hero)
         
-        XCTAssertTrue(hero.life > enemy.life)
+        XCTAssertTrue(hero.damage() > enemy.damage())
     }
     
     func testAxeVersusAxe(){
         let hero = Warrior(with: axe)
         let enemy = Warrior(with: axe)
         
-        XCTAssertTrue(hero.life == enemy.life)
+        hero.attack(at: enemy)
+        enemy.attack(at: hero)
+        
+        XCTAssertTrue(hero.damage() == enemy.damage())
     }
     
     func testSwordVersusBow(){
@@ -81,7 +88,7 @@ class UnitTestingSwiftTests: XCTestCase {
         hero.attack(at: enemy)
         enemy.attack(at: hero)
         
-        XCTAssertTrue(hero.life > enemy.life)
+        XCTAssertTrue(hero.damage() > enemy.damage())
     }
     
     func testSwordVersusStaff(){
@@ -91,7 +98,7 @@ class UnitTestingSwiftTests: XCTestCase {
         hero.attack(at: enemy)
         enemy.attack(at: hero)
         
-        XCTAssertTrue(hero.life > enemy.life)
+        XCTAssertTrue(hero.damage() > enemy.damage())
     }
     
     func testSwordVersusSword(){
@@ -101,7 +108,7 @@ class UnitTestingSwiftTests: XCTestCase {
         hero.attack(at: enemy)
         enemy.attack(at: hero)
         
-        XCTAssertTrue(hero.life == enemy.life)
+        XCTAssertTrue(hero.damage() == enemy.damage())
     }
     
     func testBowVersusStaff(){
@@ -111,7 +118,7 @@ class UnitTestingSwiftTests: XCTestCase {
         hero.attack(at: enemy)
         enemy.attack(at: hero)
         
-        XCTAssertTrue(hero.life < enemy.life)
+        XCTAssertTrue(hero.damage() < enemy.damage())
     }
     
     func testBowVersusBow(){
@@ -121,7 +128,7 @@ class UnitTestingSwiftTests: XCTestCase {
         hero.attack(at: enemy)
         enemy.attack(at: hero)
         
-        XCTAssertTrue(hero.life == enemy.life)
+        XCTAssertTrue(hero.damage() == enemy.damage())
     }
     
     func testStaffVersusStaff(){
@@ -131,7 +138,7 @@ class UnitTestingSwiftTests: XCTestCase {
         hero.attack(at: enemy)
         enemy.attack(at: hero)
         
-        XCTAssertTrue(hero.life == enemy.life)
+        XCTAssertTrue(hero.damage() == enemy.damage())
     }
     
     func testHunterVersusBadMage(){
@@ -141,7 +148,7 @@ class UnitTestingSwiftTests: XCTestCase {
         hero.attack(at: enemy)
         enemy.attack(at: hero)
         
-        XCTAssertTrue(hero.life > enemy.life)
+        XCTAssertTrue(hero.damage() > enemy.damage())
     }
     
     func testHunterVersusMage(){
@@ -151,7 +158,7 @@ class UnitTestingSwiftTests: XCTestCase {
         hero.attack(at: enemy)
         enemy.attack(at: hero)
         
-        XCTAssertTrue(hero.life < enemy.life)
+        XCTAssertTrue(hero.damage() < enemy.damage())
     }
     
     func testHunterVersusBadHunter(){
@@ -161,7 +168,16 @@ class UnitTestingSwiftTests: XCTestCase {
         hero.attack(at: enemy)
         enemy.attack(at: hero)
         
-        XCTAssertTrue(hero.life == enemy.life)
+        XCTAssertTrue(hero.damage() == enemy.damage())
     }
+    
+    func testWarriorVersusNinja(){
+        let hero = Hunter(with: bow)
+        let enemy = Warrior(with: sword)
+        
+        XCTAssertEqual(hero.damage(), enemy.damage())
+    }
+    
+    
     
 }

@@ -10,6 +10,11 @@ import Foundation
 
 class Warrior: Character {
     
-    
+    override init(with weapon: Weapon) {
+        super.init(with: weapon)
+        if weapon.type == .Axe || weapon.type == .Sword{
+            weapon.damage += 10
+        }
+    }
     
 }

@@ -41,8 +41,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testAxeVersusSword(){
-        hero = Warrior(with: axe, and: "Hero")
-        enemy = Warrior(with: sword, and: "Enemy")
+        hero = Warrior(with: axe)
+        enemy = Warrior(with: sword)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -51,8 +51,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testAxeVersusBow(){
-        hero = Warrior(with: axe, and: "Hero")
-        enemy = Warrior(with: bow, and: "Enemy")
+        hero = Warrior(with: axe)
+        enemy = Warrior(with: bow)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -60,8 +60,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testAxeVersusStaff(){
-        hero = Warrior(with: axe, and: "Hero")
-        enemy = Warrior(with: staff, and: "Enemy")
+        hero = Warrior(with: axe)
+        enemy = Warrior(with: staff)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -70,15 +70,15 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testAxeVersusAxe(){
-        hero = Warrior(with: axe, and: "Hero")
-        enemy = Warrior(with: axe, and: "Enemy")
+        hero = Warrior(with: axe)
+        enemy = Warrior(with: axe)
         
         XCTAssertTrue(hero.life == enemy.life)
     }
     
     func testSwordVersusBow(){
-        hero = Warrior(with: sword, and: "Hero")
-        enemy = Warrior(with: bow, and: "Enemy")
+        hero = Warrior(with: sword)
+        enemy = Warrior(with: bow)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -87,8 +87,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testSwordVersusStaff(){
-        hero = Warrior(with: sword, and: "Hero")
-        enemy = Warrior(with: staff, and: "Enemy")
+        hero = Warrior(with: sword)
+        enemy = Warrior(with: staff)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -97,8 +97,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testSwordVersusSword(){
-        hero = Warrior(with: sword, and: "Hero")
-        enemy = Warrior(with: sword, and: "Enemy")
+        hero = Warrior(with: sword)
+        enemy = Warrior(with: sword)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -107,8 +107,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testBowVersusStaff(){
-        hero = Warrior(with: bow, and: "Hero")
-        enemy = Warrior(with: staff, and: "Enemy")
+        hero = Warrior(with: bow)
+        enemy = Warrior(with: staff)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -117,8 +117,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testBowVersusBow(){
-        hero = Warrior(with: bow, and: "Hero")
-        enemy = Warrior(with: bow, and: "Enemy")
+        hero = Warrior(with: bow)
+        enemy = Warrior(with: bow)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)
@@ -127,8 +127,8 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testStaffVersusStaff(){
-        hero = Warrior(with: staff, and: "Hero")
-        enemy = Warrior(with: staff, and: "Enemy")
+        hero = Warrior(with: staff)
+        enemy = Warrior(with: staff)
         
         hero.attack(at: enemy)
         enemy.attack(at: hero)

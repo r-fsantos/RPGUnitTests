@@ -8,18 +8,15 @@
 
 import Foundation
 
-class Character {
-    
-    public let name: String
+class Character{
     
     public var life: Int
     
     public var weapon: Weapon
     
-    init(with weapon: Weapon, and name: String) {
+    init(with weapon: Weapon) {
         self.life = 100
         self.weapon = weapon
-        self.name = name
     }
     
     func hit(points: Int) {

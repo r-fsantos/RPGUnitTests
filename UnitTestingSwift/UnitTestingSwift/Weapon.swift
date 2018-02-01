@@ -10,10 +10,23 @@ import Foundation
 
 class Weapon {
     
-    public var damage: Int
+    var damage: Int
+    var type: WeaponType
     
-    init(damage: Int) {
-        self.damage = damage
+//    init(damage: Int) {
+//        self.damage = damage
+//    }
+    
+    init(type: WeaponType){
+        self.type = type
+        self.damage = self.type.rawValue
     }
     
+}
+
+enum WeaponType:Int{
+    case Sword = 50
+    case Axe = 70
+    case Bow = 30
+    case Staff = 40
 }

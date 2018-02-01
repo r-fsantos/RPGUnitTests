@@ -8,10 +8,10 @@
 
 import Foundation
 
-class Knife: Weapon {
+class Sword: Weapon {
     
-    override init(damage: Int) {
-        super.init(damage: 10)
+    override init(type: WeaponType) {
+        super.init(type: .Sword)
     }
     
 }

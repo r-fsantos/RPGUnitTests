@@ -14,6 +14,12 @@
 		BD73FD9920224C93004F0055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD73FD9720224C93004F0055 /* LaunchScreen.storyboard */; };
 		BD73FDA420224C93004F0055 /* UnitTestingSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDA320224C93004F0055 /* UnitTestingSwiftTests.swift */; };
 		BD73FDAF20224C94004F0055 /* UnitTestingSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDAE20224C94004F0055 /* UnitTestingSwiftUITests.swift */; };
+		BD73FDBD2022528B004F0055 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDBC2022528B004F0055 /* Battle.swift */; };
+		BD73FDBF20225415004F0055 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDBE20225415004F0055 /* Character.swift */; };
+		BD73FDC120225564004F0055 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDC020225564004F0055 /* Weapon.swift */; };
+		BD73FDC32022566A004F0055 /* Axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDC22022566A004F0055 /* Axe.swift */; };
+		BD73FDC520225772004F0055 /* Knife.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDC420225772004F0055 /* Knife.swift */; };
+		BD73FDC7202258CB004F0055 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDC6202258CB004F0055 /* Warrior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		BD73FDAA20224C94004F0055 /* UnitTestingSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD73FDAE20224C94004F0055 /* UnitTestingSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingSwiftUITests.swift; sourceTree = "<group>"; };
 		BD73FDB020224C94004F0055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD73FDBC2022528B004F0055 /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
+		BD73FDBE20225415004F0055 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		BD73FDC020225564004F0055 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		BD73FDC22022566A004F0055 /* Axe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axe.swift; sourceTree = "<group>"; };
+		BD73FDC420225772004F0055 /* Knife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knife.swift; sourceTree = "<group>"; };
+		BD73FDC6202258CB004F0055 /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,12 @@
 				BD73FD9520224C93004F0055 /* Assets.xcassets */,
 				BD73FD9720224C93004F0055 /* LaunchScreen.storyboard */,
 				BD73FD9A20224C93004F0055 /* Info.plist */,
+				BD73FDBC2022528B004F0055 /* Battle.swift */,
+				BD73FDBE20225415004F0055 /* Character.swift */,
+				BD73FDC6202258CB004F0055 /* Warrior.swift */,
+				BD73FDC020225564004F0055 /* Weapon.swift */,
+				BD73FDC22022566A004F0055 /* Axe.swift */,
+				BD73FDC420225772004F0055 /* Knife.swift */,
 			);
 			path = UnitTestingSwift;
 			sourceTree = "<group>";
@@ -259,8 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD73FDC120225564004F0055 /* Weapon.swift in Sources */,
 				BD73FD9120224C93004F0055 /* ViewController.swift in Sources */,
+				BD73FDC32022566A004F0055 /* Axe.swift in Sources */,
 				BD73FD8F20224C93004F0055 /* AppDelegate.swift in Sources */,
+				BD73FDBD2022528B004F0055 /* Battle.swift in Sources */,
+				BD73FDC520225772004F0055 /* Knife.swift in Sources */,
+				BD73FDC7202258CB004F0055 /* Warrior.swift in Sources */,
+				BD73FDBF20225415004F0055 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

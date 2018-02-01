@@ -10,7 +10,7 @@ import Foundation
 
 class Sword: Weapon {
     
-    override init(type: WeaponType) {
+    init() {
         super.init(type: .Sword)
     }
     

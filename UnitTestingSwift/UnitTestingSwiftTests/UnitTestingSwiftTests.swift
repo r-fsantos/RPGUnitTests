@@ -11,9 +11,14 @@ import XCTest
 
 class UnitTestingSwiftTests: XCTestCase {
     
+    var axe:Axe!
+    var sword:Sword!
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        axe = Axe()
+        sword = Sword()
     }
     
     override func tearDown() {
@@ -34,6 +39,7 @@ class UnitTestingSwiftTests: XCTestCase {
     }
     
     func testAxeBiggerDamage(){
+        XCTAssertTrue(axe.damage > sword.damage)
         
     }
     

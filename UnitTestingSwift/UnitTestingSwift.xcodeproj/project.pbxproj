@@ -18,7 +18,7 @@
 		BD73FDBF20225415004F0055 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDBE20225415004F0055 /* Character.swift */; };
 		BD73FDC120225564004F0055 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDC020225564004F0055 /* Weapon.swift */; };
 		BD73FDC32022566A004F0055 /* Axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDC22022566A004F0055 /* Axe.swift */; };
-		BD73FDC520225772004F0055 /* Knife.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDC420225772004F0055 /* Knife.swift */; };
+		BD73FDC520225772004F0055 /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDC420225772004F0055 /* Sword.swift */; };
 		BD73FDC7202258CB004F0055 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FDC6202258CB004F0055 /* Warrior.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +57,7 @@
 		BD73FDBE20225415004F0055 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		BD73FDC020225564004F0055 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		BD73FDC22022566A004F0055 /* Axe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axe.swift; sourceTree = "<group>"; };
-		BD73FDC420225772004F0055 /* Knife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knife.swift; sourceTree = "<group>"; };
+		BD73FDC420225772004F0055 /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
 		BD73FDC6202258CB004F0055 /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,7 +120,7 @@
 				BD73FDC6202258CB004F0055 /* Warrior.swift */,
 				BD73FDC020225564004F0055 /* Weapon.swift */,
 				BD73FDC22022566A004F0055 /* Axe.swift */,
-				BD73FDC420225772004F0055 /* Knife.swift */,
+				BD73FDC420225772004F0055 /* Sword.swift */,
 			);
 			path = UnitTestingSwift;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 				BD73FDC32022566A004F0055 /* Axe.swift in Sources */,
 				BD73FD8F20224C93004F0055 /* AppDelegate.swift in Sources */,
 				BD73FDBD2022528B004F0055 /* Battle.swift in Sources */,
-				BD73FDC520225772004F0055 /* Knife.swift in Sources */,
+				BD73FDC520225772004F0055 /* Sword.swift in Sources */,
 				BD73FDC7202258CB004F0055 /* Warrior.swift in Sources */,
 				BD73FDBF20225415004F0055 /* Character.swift in Sources */,
 			);

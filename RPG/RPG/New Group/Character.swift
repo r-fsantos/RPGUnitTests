@@ -2,17 +2,17 @@ import Foundation
 
 class Character{
     
-    public var life: Int
+    public var health: Int
     
     public var weapon: Weapon
     
     init(with weapon: Weapon) {
-        self.life = 100
+        self.health = 100
         self.weapon = weapon
     }
     
     func getHit(damage: Int) {
-        self.life -= damage
+        self.health -= damage
     }
     
     func damage() -> Int {

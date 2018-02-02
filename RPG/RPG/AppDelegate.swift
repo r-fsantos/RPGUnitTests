@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  UnitTestingSwift
+//  RPG
 //
-//  Created by Guilherme Paciulli on 31/01/18.
-//  Copyright © 2018 Guilherme Paciulli. All rights reserved.
+//  Created by Renan Soares Germano on 02/02/2018.
+//  Copyright © 2018 Renan Soares Germano. All rights reserved.
 //
 
 import UIKit

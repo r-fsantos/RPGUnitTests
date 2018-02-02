@@ -102,10 +102,10 @@
 		450859442024CEF900CC2900 /* Weapons */ = {
 			isa = PBXGroup;
 			children = (
+				4508594B2024CF3C00CC2900 /* Weapon.swift */,
 				450859452024CF1D00CC2900 /* Axe.swift */,
 				450859472024CF2400CC2900 /* Bow.swift */,
 				450859492024CF3100CC2900 /* Staff.swift */,
-				4508594B2024CF3C00CC2900 /* Weapon.swift */,
 				4508594D2024CF8E00CC2900 /* Sword.swift */,
 			);
 			name = Weapons;

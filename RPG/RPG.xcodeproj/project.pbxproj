@@ -12,16 +12,16 @@
 		450859072024CBB100CC2900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450859052024CBB100CC2900 /* Main.storyboard */; };
 		450859092024CBB100CC2900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450859082024CBB100CC2900 /* Assets.xcassets */; };
 		4508590C2024CBB100CC2900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4508590A2024CBB100CC2900 /* LaunchScreen.storyboard */; };
-		4508591A2024CC0800CC2900 /* Hunter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859152024CC0800CC2900 /* Hunter.swift */; };
-		4508591B2024CC0800CC2900 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859162024CC0800CC2900 /* Character.swift */; };
-		4508591C2024CC0800CC2900 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859172024CC0800CC2900 /* Mage.swift */; };
-		4508591D2024CC0800CC2900 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859182024CC0800CC2900 /* Warrior.swift */; };
-		4508591E2024CC0800CC2900 /* Ninja.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859192024CC0800CC2900 /* Ninja.swift */; };
-		450859242024CC2500CC2900 /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508591F2024CC2500CC2900 /* Sword.swift */; };
-		450859252024CC2500CC2900 /* Bow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859202024CC2500CC2900 /* Bow.swift */; };
-		450859262024CC2500CC2900 /* Axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859212024CC2500CC2900 /* Axe.swift */; };
-		450859272024CC2500CC2900 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859222024CC2500CC2900 /* Staff.swift */; };
-		450859282024CC2500CC2900 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859232024CC2500CC2900 /* Weapon.swift */; };
+		450859392024CE1E00CC2900 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508592E2024CE1E00CC2900 /* Weapon.swift */; };
+		4508593A2024CE1E00CC2900 /* Bow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508592F2024CE1E00CC2900 /* Bow.swift */; };
+		4508593B2024CE1E00CC2900 /* Axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859302024CE1E00CC2900 /* Axe.swift */; };
+		4508593C2024CE1E00CC2900 /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859312024CE1E00CC2900 /* Sword.swift */; };
+		4508593D2024CE1E00CC2900 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859322024CE1E00CC2900 /* Staff.swift */; };
+		4508593E2024CE1E00CC2900 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859342024CE1E00CC2900 /* Warrior.swift */; };
+		4508593F2024CE1E00CC2900 /* Hunter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859352024CE1E00CC2900 /* Hunter.swift */; };
+		450859402024CE1E00CC2900 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859362024CE1E00CC2900 /* Character.swift */; };
+		450859412024CE1E00CC2900 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859372024CE1E00CC2900 /* Mage.swift */; };
+		450859422024CE1E00CC2900 /* Ninja.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859382024CE1E00CC2900 /* Ninja.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,16 +32,16 @@
 		450859082024CBB100CC2900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4508590B2024CBB100CC2900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4508590D2024CBB100CC2900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		450859152024CC0800CC2900 /* Hunter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hunter.swift; path = "../../../UnitTestingSwift/UnitTestingSwift/Character and classes/Hunter.swift"; sourceTree = "<group>"; };
-		450859162024CC0800CC2900 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = "../../../UnitTestingSwift/UnitTestingSwift/Character and classes/Character.swift"; sourceTree = "<group>"; };
-		450859172024CC0800CC2900 /* Mage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mage.swift; path = "../../../UnitTestingSwift/UnitTestingSwift/Character and classes/Mage.swift"; sourceTree = "<group>"; };
-		450859182024CC0800CC2900 /* Warrior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Warrior.swift; path = "../../../UnitTestingSwift/UnitTestingSwift/Character and classes/Warrior.swift"; sourceTree = "<group>"; };
-		450859192024CC0800CC2900 /* Ninja.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ninja.swift; path = "../../../UnitTestingSwift/UnitTestingSwift/Character and classes/Ninja.swift"; sourceTree = "<group>"; };
-		4508591F2024CC2500CC2900 /* Sword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sword.swift; path = ../../../UnitTestingSwift/UnitTestingSwift/Weapons/Sword.swift; sourceTree = "<group>"; };
-		450859202024CC2500CC2900 /* Bow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bow.swift; path = ../../../UnitTestingSwift/UnitTestingSwift/Weapons/Bow.swift; sourceTree = "<group>"; };
-		450859212024CC2500CC2900 /* Axe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Axe.swift; path = ../../../UnitTestingSwift/UnitTestingSwift/Weapons/Axe.swift; sourceTree = "<group>"; };
-		450859222024CC2500CC2900 /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Staff.swift; path = ../../../UnitTestingSwift/UnitTestingSwift/Weapons/Staff.swift; sourceTree = "<group>"; };
-		450859232024CC2500CC2900 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Weapon.swift; path = ../../../UnitTestingSwift/UnitTestingSwift/Weapons/Weapon.swift; sourceTree = "<group>"; };
+		4508592E2024CE1E00CC2900 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		4508592F2024CE1E00CC2900 /* Bow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bow.swift; sourceTree = "<group>"; };
+		450859302024CE1E00CC2900 /* Axe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Axe.swift; sourceTree = "<group>"; };
+		450859312024CE1E00CC2900 /* Sword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
+		450859322024CE1E00CC2900 /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		450859342024CE1E00CC2900 /* Warrior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		450859352024CE1E00CC2900 /* Hunter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hunter.swift; sourceTree = "<group>"; };
+		450859362024CE1E00CC2900 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		450859372024CE1E00CC2900 /* Mage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
+		450859382024CE1E00CC2900 /* Ninja.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ninja.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +74,8 @@
 		450859002024CBB100CC2900 /* RPG */ = {
 			isa = PBXGroup;
 			children = (
-				450859142024CBE800CC2900 /* Weapons */,
-				450859132024CBE000CC2900 /* Characters */,
+				450859332024CE1E00CC2900 /* Character and classes */,
+				4508592D2024CE1E00CC2900 /* Weapons */,
 				450859012024CBB100CC2900 /* AppDelegate.swift */,
 				450859032024CBB100CC2900 /* ViewController.swift */,
 				450859052024CBB100CC2900 /* Main.storyboard */,
@@ -86,28 +86,30 @@
 			path = RPG;
 			sourceTree = "<group>";
 		};
-		450859132024CBE000CC2900 /* Characters */ = {
+		4508592D2024CE1E00CC2900 /* Weapons */ = {
 			isa = PBXGroup;
 			children = (
-				450859162024CC0800CC2900 /* Character.swift */,
-				450859152024CC0800CC2900 /* Hunter.swift */,
-				450859172024CC0800CC2900 /* Mage.swift */,
-				450859192024CC0800CC2900 /* Ninja.swift */,
-				450859182024CC0800CC2900 /* Warrior.swift */,
+				4508592E2024CE1E00CC2900 /* Weapon.swift */,
+				4508592F2024CE1E00CC2900 /* Bow.swift */,
+				450859302024CE1E00CC2900 /* Axe.swift */,
+				450859312024CE1E00CC2900 /* Sword.swift */,
+				450859322024CE1E00CC2900 /* Staff.swift */,
 			);
-			path = Characters;
+			name = Weapons;
+			path = ../../../../Downloads/Weapons;
 			sourceTree = "<group>";
 		};
-		450859142024CBE800CC2900 /* Weapons */ = {
+		450859332024CE1E00CC2900 /* Character and classes */ = {
 			isa = PBXGroup;
 			children = (
-				450859212024CC2500CC2900 /* Axe.swift */,
-				450859202024CC2500CC2900 /* Bow.swift */,
-				450859222024CC2500CC2900 /* Staff.swift */,
-				4508591F2024CC2500CC2900 /* Sword.swift */,
-				450859232024CC2500CC2900 /* Weapon.swift */,
+				450859342024CE1E00CC2900 /* Warrior.swift */,
+				450859352024CE1E00CC2900 /* Hunter.swift */,
+				450859362024CE1E00CC2900 /* Character.swift */,
+				450859372024CE1E00CC2900 /* Mage.swift */,
+				450859382024CE1E00CC2900 /* Ninja.swift */,
 			);
-			path = Weapons;
+			name = "Character and classes";
+			path = "../../../../Downloads/Character and classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,18 +184,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				450859252024CC2500CC2900 /* Bow.swift in Sources */,
-				4508591D2024CC0800CC2900 /* Warrior.swift in Sources */,
-				450859272024CC2500CC2900 /* Staff.swift in Sources */,
-				450859262024CC2500CC2900 /* Axe.swift in Sources */,
-				4508591C2024CC0800CC2900 /* Mage.swift in Sources */,
-				450859282024CC2500CC2900 /* Weapon.swift in Sources */,
+				4508593A2024CE1E00CC2900 /* Bow.swift in Sources */,
 				450859042024CBB100CC2900 /* ViewController.swift in Sources */,
-				4508591E2024CC0800CC2900 /* Ninja.swift in Sources */,
+				4508593F2024CE1E00CC2900 /* Hunter.swift in Sources */,
+				4508593B2024CE1E00CC2900 /* Axe.swift in Sources */,
 				450859022024CBB100CC2900 /* AppDelegate.swift in Sources */,
-				450859242024CC2500CC2900 /* Sword.swift in Sources */,
-				4508591A2024CC0800CC2900 /* Hunter.swift in Sources */,
-				4508591B2024CC0800CC2900 /* Character.swift in Sources */,
+				450859392024CE1E00CC2900 /* Weapon.swift in Sources */,
+				450859422024CE1E00CC2900 /* Ninja.swift in Sources */,
+				4508593D2024CE1E00CC2900 /* Staff.swift in Sources */,
+				450859412024CE1E00CC2900 /* Mage.swift in Sources */,
+				450859402024CE1E00CC2900 /* Character.swift in Sources */,
+				4508593E2024CE1E00CC2900 /* Warrior.swift in Sources */,
+				4508593C2024CE1E00CC2900 /* Sword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

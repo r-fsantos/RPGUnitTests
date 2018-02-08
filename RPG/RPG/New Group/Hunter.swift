@@ -1,6 +1,6 @@
 import Foundation
 
-class Hunter:Character{
+class Hunter: Character {
     
     override init(with weapon: Weapon) {
         super.init(with: weapon)

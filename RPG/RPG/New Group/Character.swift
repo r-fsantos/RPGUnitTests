@@ -1,6 +1,6 @@
 import Foundation
 
-class Character{
+class Character {
     
     public var health: Int
     

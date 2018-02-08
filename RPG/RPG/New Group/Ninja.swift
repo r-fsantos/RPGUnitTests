@@ -1,6 +1,6 @@
 import Foundation
 
-class Ninja:Character{
+class Ninja: Character {
     
     override init(with weapon: Weapon) {
         super.init(with: weapon)

@@ -1,8 +1,8 @@
 import Foundation
 
-class Staff: Weapon{
+class Staff: Weapon {
     
-    init(){
+    init() {
         super.init(type: .Staff)
     }
     

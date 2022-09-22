@@ -22,7 +22,18 @@
 		450859542024CFDC00CC2900 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859532024CFDC00CC2900 /* Mage.swift */; };
 		450859562024CFED00CC2900 /* Ninja.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859552024CFED00CC2900 /* Ninja.swift */; };
 		450859582024D00000CC2900 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450859572024D00000CC2900 /* Warrior.swift */; };
+		BF800DC328DCE16600C45880 /* RPGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF800DC228DCE16600C45880 /* RPGTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF800DC428DCE16600C45880 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 450858F62024CBB100CC2900 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 450858FD2024CBB100CC2900;
+			remoteInfo = RPG;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		450858FE2024CBB100CC2900 /* RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,10 +53,19 @@
 		450859532024CFDC00CC2900 /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
 		450859552024CFED00CC2900 /* Ninja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninja.swift; sourceTree = "<group>"; };
 		450859572024D00000CC2900 /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		BF800DC028DCE16600C45880 /* RPGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF800DC228DCE16600C45880 /* RPGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		450858FB2024CBB100CC2900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF800DBD28DCE16600C45880 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				450859002024CBB100CC2900 /* RPG */,
+				BF800DC128DCE16600C45880 /* RPGTests */,
 				450858FF2024CBB100CC2900 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				450858FE2024CBB100CC2900 /* RPG.app */,
+				BF800DC028DCE16600C45880 /* RPGTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +134,14 @@
 			path = "New Group1";
 			sourceTree = "<group>";
 		};
+		BF800DC128DCE16600C45880 /* RPGTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF800DC228DCE16600C45880 /* RPGTests.swift */,
+			);
+			path = RPGTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,19 +162,42 @@
 			productReference = 450858FE2024CBB100CC2900 /* RPG.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BF800DBF28DCE16600C45880 /* RPGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF800DC828DCE16600C45880 /* Build configuration list for PBXNativeTarget "RPGTests" */;
+			buildPhases = (
+				BF800DBC28DCE16600C45880 /* Sources */,
+				BF800DBD28DCE16600C45880 /* Frameworks */,
+				BF800DBE28DCE16600C45880 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF800DC528DCE16600C45880 /* PBXTargetDependency */,
+			);
+			name = RPGTests;
+			productName = RPGTests;
+			productReference = BF800DC028DCE16600C45880 /* RPGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		450858F62024CBB100CC2900 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Renan Soares Germano";
 				TargetAttributes = {
 					450858FD2024CBB100CC2900 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					BF800DBF28DCE16600C45880 = {
+						CreatedOnToolsVersion = 13.4.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 450858FD2024CBB100CC2900;
 					};
 				};
 			};
@@ -162,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				450858FD2024CBB100CC2900 /* RPG */,
+				BF800DBF28DCE16600C45880 /* RPGTests */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +228,13 @@
 				4508590C2024CBB100CC2900 /* LaunchScreen.storyboard in Resources */,
 				450859092024CBB100CC2900 /* Assets.xcassets in Resources */,
 				450859072024CBB100CC2900 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF800DBE28DCE16600C45880 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +260,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF800DBC28DCE16600C45880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF800DC328DCE16600C45880 /* RPGTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF800DC528DCE16600C45880 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 450858FD2024CBB100CC2900 /* RPG */;
+			targetProxy = BF800DC428DCE16600C45880 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		450859052024CBB100CC2900 /* Main.storyboard */ = {
@@ -358,6 +435,57 @@
 			};
 			name = Release;
 		};
+		BF800DC628DCE16600C45880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VUAL48S8A4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renato.RPGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPG.app/RPG";
+			};
+			name = Debug;
+		};
+		BF800DC728DCE16600C45880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VUAL48S8A4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renato.RPGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPG.app/RPG";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -375,6 +503,15 @@
 			buildConfigurations = (
 				450859112024CBB100CC2900 /* Debug */,
 				450859122024CBB100CC2900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF800DC828DCE16600C45880 /* Build configuration list for PBXNativeTarget "RPGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF800DC628DCE16600C45880 /* Debug */,
+				BF800DC728DCE16600C45880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
